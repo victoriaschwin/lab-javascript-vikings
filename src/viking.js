@@ -56,8 +56,8 @@ class War {
   }
 
   vikingAttack(){
-    let randomSaxon = Math.floor(Math.random(this.saxonArmy.length)*1)
-    let randomViking = Math.floor(Math.random(this.vikingArmy.length)*1)
+    let randomSaxon = Math.floor(Math.random()*this.saxonArmy.length)
+    let randomViking = Math.floor(Math.random()*this.vikingArmy.length)
 
     let result = this.saxonArmy[randomSaxon].receiveDamage(this.vikingArmy[randomViking].strength)
 
@@ -67,8 +67,8 @@ class War {
   }
 
   saxonAttack(){
-    let randomSaxon = Math.floor(Math.random(this.saxonArmy.length)*1)
-    let randomViking = Math.floor(Math.random(this.vikingArmy.length)*1)
+    let randomSaxon = Math.floor(Math.random()*this.saxonArmy.length)
+    let randomViking = Math.floor(Math.random()*this.vikingArmy.length)
 
     let result = this.vikingArmy[randomViking].receiveDamage(this.saxonArmy[randomSaxon].strength)
 
