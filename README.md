@@ -81,6 +81,7 @@ The first test case says that "_Soldier class >> should receive 2 arguments (hea
 // Soldier
 class Soldier {
   constructor(health, strength) {}
+  
 }
 
 // Viking
